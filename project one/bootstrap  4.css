@@ -1,0 +1,354 @@
+nav {
+    background-color: rgba(0, 0, 0, 0.82);
+}
+
+.head,
+.price,
+.popular .foot-popular .imge {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.head {
+    background: url(hero-bg.jpg);
+    width: 100%;
+    height: 600px;
+    align-items: center;
+    margin: 0;
+}
+
+.head .lefthead {
+    color: white;
+    padding: 0 150px;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.btn:active,
+.btn:hover,
+.btn:focus,
+.btn-warning {
+    color: white;
+}
+
+.righthead {
+    width: 350px;
+    margin: 0 auto;
+}
+
+.righthead .links {
+    display: flex;
+}
+
+.righthead .links .btn-lk {
+    display: block;
+    padding: 10px;
+    width: 75px;
+    border: 0;
+    outline: 0;
+    background: rgb(163 159 165 / 43%);
+    color: white;
+    font-weight: bold;
+}
+
+.righthead .links .btn-lk:nth-of-type(1) {
+    background-color: white;
+    color: #555151;
+}
+
+.formContainar {
+    background-color: white;
+    padding: 10px 30px;
+}
+
+.righthead form input {
+    border: 1px solid #EEE;
+    outline: 0;
+    border-radius: 0;
+    padding: 10px;
+    margin: 15px auto;
+}
+
+.righthead form button {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.popular {
+    margin: 70px;
+}
+
+.popular .head-popular,
+.popular .foot-popular .imge,
+.head-price,
+.head-issues,
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.popular .foot-popular,
+.issues .foot-issues {
+    margin: 60px 0;
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+.popular .foot-popular .imge {
+    width: 300px;
+    height: 200px;
+    color: white;
+}
+
+.popular .foot-popular .img1 {
+    background-image: url(d1.jpg);
+}
+
+.popular .foot-popular .img2 {
+    background-image: url(d2.jpg);
+}
+
+.popular .foot-popular .img3 {
+    background-image: url(d3.jpg);
+}
+
+.price {
+    margin: 30px 0;
+    background-color: #212529;
+    background-image: url(download.png);
+    width: 100%;
+    color: white;
+    padding: 50px;
+}
+
+.foot-price {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+
+.foot-price .price-cont {
+    text-align: center;
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    background-color: #2156;
+}
+
+.foot-price .price-cont hr {
+    color: red;
+    font-size: 30px;
+    height: 5px;
+}
+
+.foot-price .price-cont .price-item .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.foot-price .price-cont .price-item .item span:nth-of-type(2) {
+    background-color: #764104;
+    padding: 5px;
+}
+
+.issues {
+    margin: 50px 0;
+}
+
+.issue,
+.issue img {
+    width: 300px;
+}
+
+.issues p {
+    color: #A2A2A2;
+}
+
+.issue h4 {
+    margin: 15px 0;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.info .info_right img {
+    width: 100%;
+}
+
+.info .info_left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px 0 115px;
+    justify-content: space-evenly;
+}
+
+.footer {
+    background-color: #212529;
+    width: 100%;
+    height: 200px;
+    color: white;
+}
+
+.footer .icons a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer .icons i {
+    margin: 20px 5px;
+    font-size: 30px;
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+    width: 60px;
+    line-height: 40px;
+}
+
+.footer .icons .fa-facebook {
+    background-color: #284ea8 !important;
+}
+
+.footer .icons .fa-twitter {
+    background-color: #1876a6 !important;
+}
+
+.footer .icons .fa-instagram {
+    background-image: linear-gradient(to top, #f97463, #bd2279, #4122b5) !important;
+}
+
+.footer .icons .fa-whatsapp {
+    background-color: #0dac07 !important;
+}
+
+.footer h5 span {
+    color: red;
+}
+
+@media (min-width:500px) and (max-width: 1024px) {
+
+    .popular .foot-popular,
+    .issues .foot-issues,
+    .info,
+    .foot-price {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 20px 0 0 0;
+    }
+
+    .head {
+        height: 1000px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .popular {
+        margin-top: 150px;
+    }
+
+    .popular .foot-popular .imge,
+    .issues .foot-issues .issue,
+    .info .info_left,
+    .foot-price .price-cont {
+        margin: 20px auto;
+    }
+
+    .info_left {
+        margin: 10px 20px;
+    }
+}
+
+@media (max-width:1100px) {
+    .head .lefthead {
+        padding: 20px 0 !important;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+        justify-content: center;
+    }
+}
+
+@media (min-width:279px) and (max-width: 499px) {
+
+    .foot-price,
+    .issues .foot-issues,
+    .info,
+    .footer {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        flex-direction: column !important;
+        flex-wrap: wrap !important;
+        margin: 10px 0 0 0 !important;
+    }
+
+    .head {
+        height: 1100px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .price-cont {
+        width: 200px !important;
+        margin: 10px auto !important;
+    }
+
+    .foot-popular {
+        display: flex !important;
+        flex-direction: column !important;
+        flex-wrap: wrap !important;
+        margin: 10px 0 0 0 !important;
+        align-content: center !important;
+    }
+
+    .lefthead {
+        padding: 0 !important;
+        margin: 20px auto !important;
+    }
+
+    .info,
+    .footer {
+        margin: 0 !important;
+    }
+
+    .info .info_left {
+        margin: 10px auto !important;
+    }
+
+    .imge {
+        width: 200px !important;
+        margin: 20px auto !important;
+    }
+
+    .footer {
+        justify-content: center !important;
+    }
+
+    .footer .icons i {
+        margin: 20px 5px !important;
+        font-size: 30px !important;
+        border-radius: 50% !important;
+        padding: 10px !important;
+        width: 50px;
+        line-height: normal;
+    }
+}
